@@ -6,7 +6,7 @@ import $ivy.`io.github.davidgregory084::mill-tpolecat:0.1.4`
 import io.github.davidgregory084.TpolecatModule
 
 trait Base extends SbtModule with TpolecatModule with PublishModule { outer =>
-  def publishVersion = "0.1.0-SNAPSHOT"
+  def publishVersion = "0.1.0"
 
   def javacOptions = Seq("-source", "1.8", "-target", "1.8", "-encoding", "UTF-8")
   def scalaVersion  = "2.13.3"
