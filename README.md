@@ -1,5 +1,6 @@
 # spb codec
 
+![build](https://github.com/chikei/spb-codec/workflows/Tests/badge.svg)
 [![Maven Central](https://img.shields.io/maven-central/v/io.github.chikei/spb-codec-core_2.13)](https://maven-badges.herokuapp.com/maven-central/io.github.chikei/spb-codec-core_2.13)
 
 spb codec is a [Protobuf 3](https://developers.google.com/protocol-buffers/docs/proto3) codec library for Scala.
