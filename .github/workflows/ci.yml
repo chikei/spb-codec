@@ -1,0 +1,21 @@
+name: Tests
+
+on: [push, pull_request]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Cache node modules
+      uses: actions/cache@v2
+      with:
+        key: ${{ runner.os }}-build
+        path: ~/.coursier
+    - uses: jodersky/setup-mill@v0.2.2
+      with:
+        mill-version: 0.8.0
+    - name: Run tests
+      run: mill modules._.test.test
